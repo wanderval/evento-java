@@ -4,16 +4,28 @@
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
- <img src="https://img.shields.io/static/v1?label=Evento&message=JAVA&color=8257E5&labelColor=000000" alt="NLW 04" />
+ <img src="https://img.shields.io/static/v1?label=Evento&message=JAVA&color=8257E5&labelColor=000000" alt="Evento Java" />
 </p>
 
 ## Architecture
-<p align="center">
-  <img alt="Happy" src=".github/todolist_overflow.png" width="100%">
-</p>
+<details>
+  <summary>Diagram Overview</summary>
+
+  <p align="center">
+    <img alt="Overview" src=".github/todolist_overview.svg" width="100%">
+  </p>
+</details>
+
+<details>
+  <summary>Diagram Database</summary>
+
+  <p align="center">
+    <img alt="Database" src=".github/todolist_database.svg" width="100%">
+  </p>
+</details>
+
 
 ## Tecnologias
-
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Java](https://www.java.com/)
@@ -22,11 +34,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [H2](https://www.h2database.com/html/main.html)
 
 ## Projeto
-
 O todolist é uma api de gerenciamento de tasks que utiliza authenticação para permitir a manipulação dos dados registros nas tarefas
 
 ## Authentication
-
 Está sendo utilizada a authenticação do tipo `Basic Auth` sendo assim todas as requisições devem informar o `username` e `password`
 
 | Parameter | Type | Description |
@@ -35,7 +45,6 @@ Está sendo utilizada a authenticação do tipo `Basic Auth` sendo assim todas a
 | `password` | `string` | **Required**. API key |
 
 ## Como executar aplicação
-
 - Clone o repositório
 - Instale as dependencias com `mvn clean install`
 - Inicie a aplicação com `mvn spring-boot:run` ou usando IDE como `Vscode, Eclipse ou Intellij`
@@ -80,7 +89,6 @@ GET /tasks/
 ```
 
 ## Como acessar h2 database
-
 Para acessar o console h2 use a seguinte url http://localhost:8080/h2-console as configurações são feitas no arquivo `application.properties`
 
 ```
